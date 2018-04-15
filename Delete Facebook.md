@@ -46,13 +46,6 @@ In this situation there are two ways to go:
 
 To ensure this doesn't go further, and A's friends repost B's content again, some sort of digital legal contract needs to be created and signed but each party that recives the private content. This is required for all private content as once it is decrypted it can be reposted anywhere. Digial signing can be handled via somesort of blockchain ledger.
 
-
-## Technology/Standards that might help
-
-- [dokieli](https://github.com/linkeddata/dokieli) is a decentralised article authoring, annotation, and social notification tool which works from Web browsers. It is built with the following principles in mind: freedom of expression, decentralisation, interoperability.
-- [FOAF Search Engine](http://www.foaf-search.net/)
-- [BuddyPress](https://wordpress.org/plugins/buddypress/) [Wordpress Plugin] Enable registered members to create profiles, have private conversations, make connections, create & interact in groups, and much more. Truly a social network in a box, BuddyPress helps you more easily build a home for your company, school, sports team, or other niche community.
-
 ## Proposal to leverage existing Blogging infrastructure
 
 All publishing platforms need to:
@@ -81,9 +74,9 @@ This standard needs to define:
 
 - how to provide a list of possible interactons
     - what they are called (VERBS?)
-    - an endpoint for those interactions + HTTP action type i.e. GET, POST, PUT etc
-- what data those endpoints require, format, required or optional.
-- ?how to render an interface for those interactions?
+    - an endpoint for those interactions + HTTP verbs i.e. GET, POST, PUT etc
+- what data those endpoints require: format, required or optional.
+- ?How to render an interface for those interactions?
 
 ### Extending Blogs i.e. Wordpress
 
@@ -97,8 +90,17 @@ To allow a third party Social Network Interface (SNI) to use a WP site as a publ
 
 ### Private content
 
+![Private RSS](images/private-rss.png)
+
 Each registered user on the SNI has a public cryptographic key associated with it. A personal RSS feed is created for each based on what the content owner chooses to show them (access control on a per published item level) and that they themselves desire to read (i.e. filtering by subject, tag etc). This RSS feed is encrypted with their public key as is each private item in the feed that they have access to. 
 
+
+
+## Technology/Standards that might help
+
+- [dokieli](https://github.com/linkeddata/dokieli) is a decentralised article authoring, annotation, and social notification tool which works from Web browsers. It is built with the following principles in mind: freedom of expression, decentralisation, interoperability.
+- [FOAF Search Engine](http://www.foaf-search.net/)
+- [BuddyPress](https://wordpress.org/plugins/buddypress/) [Wordpress Plugin] Enable registered members to create profiles, have private conversations, make connections, create & interact in groups, and much more. Truly a social network in a box, BuddyPress helps you more easily build a home for your company, school, sports team, or other niche community.
 
 ---
 
