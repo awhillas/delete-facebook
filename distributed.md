@@ -3,7 +3,7 @@
 As Tim Berners-Lee addresses the problem of content ownership
 
 > A well-documented frustration with Social Network Sites (SNS's) is, in 2009, the fact that each site stores the user's data in a silo.
->  The user is not in control of his or her data.
+> The user is not in control of his or her data.
 > There are often APIs, but each SNS typically has different types of data and therefore different APIs
 
 Tim tackles this problem with a [Distributed Application Architecture](https://www.w3.org/DesignIssues/CloudStorage.html) which seperates the application from the storage. A user might have a blog, twitter account, a personal website and a an account on an instant messaging platform. Using Tim's Linked Data RDF description as a common interface all this content can be read and brought together under one interface. This has been happening for a long time already with RSS/Atom feeds for content syndication from Blogs.
@@ -20,9 +20,9 @@ The frist can be handled by [RSS Modules](http://web.resource.org/rss/1.0/module
 Why extend RSS? Some motivating examples:
 
 - Friend A publishes a new blog post...
-    - Friend B's social portal reads and wants to provide an interface to post a comment the post.
-    - Friend C wants to "like" Friend A's post.
-    - Friend D wants to reply to Friend B's comment.
+  - Friend B's social portal reads and wants to provide an interface to post a comment the post.
+  - Friend C wants to "like" Friend A's post.
+  - Friend D wants to reply to Friend B's comment.
 
 Here Friend A's blog should provide a description of all the ways that the RSS feed consumer can interact with the content published. Follwing linked data princiles
 
