@@ -1,5 +1,7 @@
 # Delete Facebook
 
+These were my initial thoughts on the subject and have since been revisted after some research and more thought into the problems.
+
 ## Requirements
 
 Existing distributed tech has failed to be a viable option for FB as its always too complicated for the end user. FB has defined the maximum difficulty that the end user experience can take and it also provides a good starting point to work from.
@@ -40,9 +42,9 @@ Linked data comes into play when deciding where to store the content e.g.
 3. Person C, also friend only of Person A, wants to view the blog post and associated comments. Person C is not a firend of Person B.
 
 In this situation there are two ways to go:
- 
+
 1. Person C can't see Person B's comment. This closes down closed group discssions. Mutual friends of A and B will still be able to see everything.
-2. Person B grants permisson for A to decrypt and re-encrypt B's comment for A's friends only. 
+2. Person B grants permisson for A to decrypt and re-encrypt B's comment for A's friends only.
 
 To ensure this doesn't go further, and A's friends repost B's content again, some sort of digital legal contract needs to be created and signed but each party that recives the private content. This is required for all private content as once it is decrypted it can be reposted anywhere. Digial signing can be handled via somesort of blockchain ledger.
 
@@ -86,13 +88,13 @@ To allow a third party Social Network Interface (SNI) to use a WP site as a publ
 
 - Create a new account and provide credentials e.g. create a new blog via <wordpress.com> or host one privately.
 - publish content to the account using the credentials e.g. WP has an API
-- track/register reader accounts with their associated public key (i.e. PGP public key) e.g. WP blogs allows multipule user registrations and access control to content based on passwords. 
+- track/register reader accounts with their associated public key (i.e. PGP public key) e.g. WP blogs allows multipule user registrations and access control to content based on passwords.
 
 ### Private content
 
 ![Private RSS](images/private-rss.png)
 
-Each registered user on the SNI has a public cryptographic key associated with it. A personal RSS feed is created for each based on what the content owner chooses to show them (access control on a per published item level) and that they themselves desire to read (i.e. filtering by subject, tag etc). This RSS feed is encrypted with their public key as is each private item in the feed that they have access to. 
+Each registered user on the SNI has a public cryptographic key associated with it. A personal RSS feed is created for each based on what the content owner chooses to show them (access control on a per published item level) and that they themselves desire to read (i.e. filtering by subject, tag etc). This RSS feed is encrypted with their public key as is each private item in the feed that they have access to.
 
 
 
