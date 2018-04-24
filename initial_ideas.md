@@ -1,6 +1,6 @@
 # Delete Facebook
 
-These were my initial thoughts on the subject and have since been revisted after some research and more thought into the problems.
+**NOTE: These were my initial thoughts on the subject and have since been revisted after some research and more thought into the problems.** I'm keeping them here for now as the _spirit_ of them is still true i.e. the practical approch of repurposing existing infrastructure.
 
 ## Requirements
 
@@ -92,7 +92,7 @@ To allow a third party Social Network Interface (SNI) to use a WP site as a publ
 
 ### Private content
 
-![Private RSS](images/private-rss.png)
+![Private RSS](images/friend_request.svg)
 
 Each registered user on the SNI has a public cryptographic key associated with it. A personal RSS feed is created for each based on what the content owner chooses to show them (access control on a per published item level) and that they themselves desire to read (i.e. filtering by subject, tag etc). This RSS feed is encrypted with their public key as is each private item in the feed that they have access to.
 

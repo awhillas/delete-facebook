@@ -1,0 +1,20 @@
+@startuml
+
+title "Friend Request (FR)"
+
+actor "New Friend X" as X
+boundary "Soical Network\nClient" as SSCX
+boundary "Friend Y's\nFOAF" as FOAF
+control "Friend Y's\nPrivate Node" as Node
+boundary "Soical Network\nClient" as SSCY
+actor "Friend Y" as Y
+
+X -> SSCX : 1. URL of Friend Y FOAF
+SSCX -> FOAF : 2. Gets Private Node URL
+SSCX -> Node : 3. Friend Request
+Node -> SSCX : 4. ?Acknowledge?
+Node -> SSCY : 5. Forward FR
+Y -> SSCY : 6. Approve FR
+SSCY -> SSCX : 7.Approve FR
+
+@enduml
